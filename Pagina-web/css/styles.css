@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Poppins', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #2d2c32;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: linear-gradient(180deg, 
+    rgba(43,42,48,0.5)0%,
+    rgba(45,44,50,1)100%),
+    url(https://thumbs.dreamstime.com/z/travel-planning-concept-top-view-travel-planning-concept-top-view-taking-notes-to-notebook-map-background-search-best-trip-101182286.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.menu-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #eeeff3;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu-container .nav ul li{
+    position: relative;
+    float: left;
+}
+
+.menu-container .nav ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #eeeff3;
+    display: block;
+    font-weight: 600;
+}
+
+.menu-container .nav ul li a:hover{
+    color: #e03c40;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu-container label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt{
+    width: 50%;
+}
+
+.header-txt h1{
+    font-size: 110px;
+    color: #fefbf8;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.header-txt p{
+    font-size: 16px;
+    color: #dadada;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 35px;
+    background-color: #e03c40;
+    color: #fefbf8;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 35px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: #ee1316;
+}
+
+.about{
+    padding: 100px 0;
+}
+
+.about-content{
+    display: flex;
+}
+
+.about-1{
+    width: 50%;
+}
+
+h3{
+    font-size: 18px;
+    color: #a6a5ab;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+p{
+    color: #838288;
+    font-size: 16px;
+}
+
+.about-2{
+    width: 50%;
+    padding-left: 150px;
+}
+
+.about-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.about-img img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.about-txt{
+    padding-left: 25px;
+}
+
+.about-txt h4{
+    font-size: 16px;
+    color: #a6a5ab;
+    text-transform: uppercase;
+}
+
+.services{
+    padding: 100px 0;
+    background-color: #b1afb0;
+}
+
+.services-txt{
+    text-align: center;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #2d2c32;
+    margin-bottom: 20px;
+}
+
+.services-txt p{
+    color: #3a3a3a;
+    margin-bottom: 35px;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.services-content img{
+    width: 100%;
+    height: 350px;
+}
+
+.footer-container{
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container h2{
+    color: #fefbf8;
+}
+
+.form-group{
+    display: flex;
+}
+
+.campo{
+    padding: 13px 10px;
+    background-color: #b1afb0;
+    color: #fefbf8;
+    outline: none;
+    font-size: 16px;
+    margin: 0 5px 5px 0;
+    border: 0;
+}
+
+.campo::placeholder{
+    color: #fefbf8;
+    text-transform: capitalize;
+}
+
+@media(max-width:991px){
+    .menu-container{
+        padding: 30px;
+    }
+    .menu-container .label{
+        display: initial;
+    }
+    .menu-container .nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#2d2c32 ;
+        display: none;
+    }
+    .menu-container nav ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .nav{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 100px 30px 30px 30px;
+    }
+    .header-txt{
+        width: 100%;
+        text-align: center;
+    }
+    .header-txt h1{
+        font-size: 90px;
+        line-height: 100px;
+    }
+    .btn-1{
+        margin-top: 25px;
+    }
+    .about{
+        padding: 30px;
+    }
+    .about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-2{
+        width: 100%;
+        padding: 0;
+    }
+    .about-img{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .about-txt{
+        padding-left: 0;
+    }
+    .services{
+        padding: 30px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .services-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-container{
+        padding: 30px;
+    }
+    .form-group{
+        flex-direction: column;
+    }
+    .campo{
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+}
